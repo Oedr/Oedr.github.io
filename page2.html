@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style id="id1">
+    
+        
+    
+</style>
+</head>
+<body>
+    <form action="" onsubmit="return false">
+    <input type="text" id="id" placeholder="old amount">
+    <input type="text" id = "id2" placeholder="new amount">
+    <button type="submit" onclick="increasePercent()">calculate</button>
+    </form>
+    <p id="id3"></p>
+    <p id = "id4"></p>
+    <script>
+        
+        function increasePercent(){
+            var increase, oldAmount,newAmount,percent;
+            oldAmount = document.getElementById("id").value;
+            newAmount = document.getElementById("id2").value;
+            increase = newAmount - oldAmount;
+            percent = increase / oldAmount;
+            document.getElementById("id3").innerHTML = "your increase percent is: " + percent;
+        }
+        var arr = [
+            person = {
+                name:"omar"
+            }
+        ]
+        document.writeln(arr[0]=person.name);
+    </script>
+</body>
+</html>

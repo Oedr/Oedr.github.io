@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            
+        }
+        input{
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>this programe is to calculate price after discount</h1>
+    <form action="" onsubmit="return false;">
+        <input type="text" id = "userInput1" placeholder="inisial price"><br>
+        <input type="text" id="userInput"placeholder="Discount amount in decimal"><br>
+        <input type="submit" onclick="result()">
+    </form>
+    <p id="1"></p>
+    <script> 
+        
+        
+         function result (){
+            var InisialPrice = document.getElementById("userInput1").value;
+            var FinalPrice,DiscountAmount;
+            var DiscountPercent = document.getElementById("userInput").value;
+         
+            DiscountAmount = InisialPrice * DiscountPercent;
+            FinalPrice = InisialPrice - DiscountAmount;
+            
+            document.getElementById("1").innerHTML =  FinalPrice;
+         }
+        
+       
+    </script>
+</body>
